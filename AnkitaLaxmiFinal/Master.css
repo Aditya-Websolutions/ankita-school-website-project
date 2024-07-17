@@ -1,0 +1,543 @@
+﻿
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #dfe9f5;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.button {
+    display: inline-block;
+    background: rgb(124, 157, 212);
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: center;
+    text-decoration: none;
+}
+
+    .button:hover {
+        background: rgba(147, 159, 190, 0.856);
+    }
+
+nav {
+    width: 100%;
+}
+
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-around; /* Adjust as needed for spacing */
+    }
+
+        nav ul li {
+            margin: 0 10px; /* Adjust as needed for spacing */
+        }
+
+            nav ul li a {
+                text-decoration: none;
+                color: #000; /* Adjust as needed */
+                display: flex;
+                align-items: center;
+            }
+
+
+
+                nav ul li a .nav-item {
+                    margin-left: 5px; /* Adjust as needed */
+                }
+
+                nav ul li a.logo img {
+                    width: 40px;
+                    height: 40px;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+
+                nav ul li a.logo span {
+                    vertical-align: middle;
+                }
+
+    nav.collapsed ul li a .nav-item {
+        display: none;
+    }
+
+a:hover {
+    background: rgb(124, 157, 212);
+}
+
+.logout {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.main {
+    position: relative;
+    padding: 20px;
+    width: 100%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .main.expanded {
+        padding-left: 90px;
+    }
+
+.main-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+    .main-top h1 {
+        margin: 0;
+    }
+
+    .main-top i {
+        position: relative;
+        margin: 10px 30px;
+        color: rgb(110, 109, 109);
+        cursor: pointer;
+    }
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
+
+.main-skills {
+    display: flex;
+    margin-top: 20px;
+}
+
+    .main-skills .card {
+        width: 60%;
+        margin: 10px;
+        background: #fff;
+        text-align: center;
+        border-radius: 20px;
+        padding: 10px;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .main-skills .card h3 {
+            margin: 10px;
+            text-transform: capitalize;
+        }
+
+        .main-skills .card p {
+            font-size: 12px;
+        }
+
+        .main-skills .card button {
+            background: rgb(124, 157, 212);
+            color: #fff;
+            padding: 7px 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+            .main-skills .card button:hover {
+                background: rgba(147, 159, 190, 0.856);
+            }
+
+        .main-skills .card i {
+            font-size: 22px;
+            padding: 20px;
+        }
+
+        .main-skills .card img {
+            height: 90px;
+            width: 90px;
+        }
+
+.main-course {
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.course-box {
+    width: 100%;
+    height: 300px;
+    padding: 10px 10px 30px 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .course-box ul {
+        list-style: none;
+        display: flex;
+    }
+
+        .course-box ul li {
+            margin: 10px;
+            color: gray;
+            cursor: pointer;
+        }
+
+        .course-box ul .active {
+            color: #000;
+            border-bottom: 1px solid #000;
+        }
+
+    .course-box .course {
+        display: flex;
+    }
+
+.box {
+    width: 33%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgb(235, 233, 233);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+    .box p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .box button {
+        background: #000;
+        color: #fff;
+        padding: 7px 10px;
+        border-radius: 10px;
+        margin-top: 3rem;
+        cursor: pointer;
+    }
+
+        .box button:hover {
+            background: rgba(0, 0, 0, 0.842);
+        }
+
+    .box i {
+        font-size: 7rem;
+        float: right;
+        margin: -20px 20px 20px 0;
+    }
+
+.html {
+    color: rgb(25, 94, 54);
+}
+
+.css {
+    color: rgb(104, 179, 35);
+}
+
+.js {
+    color: rgb(28, 98, 179);
+}
+
+.course-box ul li.active,
+.course-box ul li:hover,
+.course-box ul li.active:hover {
+    text-decoration: underline;
+    color: #000;
+    font-size: 20px;
+}
+
+.email-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .email-box span {
+        color: blue;
+    }
+
+.dark-mode {
+    background: #121212;
+    color: #ffffff;
+}
+
+    .dark-mode nav {
+        background: #1f1f1f;
+    }
+
+    .dark-mode .main-skills .card,
+    .dark-mode .course-box,
+    .dark-mode .email-box {
+        background: #292929;
+        color: #ffffff;
+    }
+
+    .dark-mode a {
+        color: #ffffff;
+    }
+
+    .dark-mode .logout a:hover {
+        background: rgb(124, 157, 212);
+    }
+
+    .dark-mode .main-skills .card button {
+        background: rgb(124, 157, 212);
+    }
+
+    .dark-mode .box {
+        background: #3a3a3a;
+    }
+
+.chart-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.tab-contents {
+    display: none;
+}
+
+    .tab-contents.active-tab {
+        display: block;
+    }
+
+.routine-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px; /* Add margin to separate from the chart container */
+}
+
+    .routine-container h2 {
+        margin-bottom: 20px;
+    }
+
+    .routine-container table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .routine-container th, .routine-container td {
+        border: 1px solid #ccc;
+        padding: 8px;
+    }
+
+    .routine-container th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    .routine-container tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+.chart-routine-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.chart-container {
+    width: calc(90% - 10px); /* Adjust as needed */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.routine-container {
+    width: calc(90% - 10px); /* Adjust as needed */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .routine-container h2 {
+        margin-bottom: 20px;
+    }
+
+    .routine-container table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .routine-container th, .routine-container td {
+        border: 1px solid #ccc;
+        padding: 8px;
+    }
+
+    .routine-container th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    .routine-container tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+.chart-container,
+.accordion-container {
+    width: calc(50% - 5px); /* Adjust as needed */
+    margin-right: 10px; /* Add small space between containers */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+.accordion-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+.accordion {
+    border-top: 1px solid #ccc;
+}
+
+.accordion-btn {
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+    .accordion-btn:hover {
+        background-color: #e0e0e0;
+    }
+
+.accordion-panel {
+    display: none;
+    padding: 10px;
+}
+
+    .accordion-panel p {
+        margin: 0;
+    }
+
+    .accordion-panel.active {
+        display: block;
+    }
+
+.accordion-container {
+    width: calc(70% - 10px); /* Adjust as needed */
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+}
+
+    .accordion-container h2 {
+        margin-bottom: 20px;
+        margin-left: 70px;
+        color: #264ed1; /* Change color for better readability */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .accordion-container .accordion-btn {
+        background-color: #f4f1f1;
+        color: #7ba9e9;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        text-align: left;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-weight: bolder;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        .accordion-container .accordion-btn:hover {
+            background-color: #ddd0d0;
+        }
+
+    .accordion-container .accordion-panel {
+        display: none;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+        .accordion-container .accordion-panel p {
+            margin: 0;
+        }
+
+        .accordion-container .accordion-panel.active {
+            display: block;
+        }
+/* Add these styles at the end of your CSS */
+
+.dark-mode .chart-container {
+    background: #292929; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
+
+.dark-mode .accordion-container {
+    background: #292929; /* Dark background color */
+    color: #ffffff; /* Light text color */
+}
+
+    .dark-mode .accordion-container .accordion-btn {
+        background-color: #383434;
+    }
+
+.dark-mode .chart-container canvas {
+    background: #292929; /* Dark background color */
+}
+
+.dark-mode .routine-container {
+    background: #292929; /* Dark background color */
+    color: #e2dddd; /* Light text color */
+}
+
+    .dark-mode .routine-container th,
+    .dark-mode .routine-container td {
+        border-color: #2a2929; /* Light border color */
+    }
+
+
+
+
+
+
+

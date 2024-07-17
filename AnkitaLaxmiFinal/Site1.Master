@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="AnkitaLaxmiFinal.Site1" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Master.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" class="menu-icon" onclick="toggleSidebar()">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="logo">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQArCSSNkRtrwGebx50sDcwqiTS-zUT8JryqkK5qnmW_Wr2W8z_Ocz5Qr_lVUdzQYB6YCk&usqp=CAU" alt="logo" />
+                            <span class="nav-item"><b>DASHBOARD</b></span>
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="fas fa-home"></i><span class="nav-item">Home</span></a></li>
+                    <li><a href="WebForm3.aspx"><i class="fas fa-user"></i><span class="nav-item">My Profile</span></a></li>
+                    <li><a href="#"><i class="fas fa-wallet"></i><span class="nav-item">Fee</span></a></li>
+                    <li><a href="WebForm2.aspx"><i class="fas fa-chart-bar"></i><span class="nav-item">My Attendance</span></a></li>
+                    <li><a href="#"><i class="fas fa-tasks"></i><span class="nav-item">My Courses</span></a></li>
+                    <li><a href="WebForm4.aspx"><i class="fas fa-clock"></i><span class="nav-item">Marks</span></a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i><span class="nav-item">Settings</span></a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i><span class="nav-item">Help</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
